@@ -1,0 +1,36 @@
+# Undo Stack — C
+
+## Overview
+A small command-line text editor built in C that uses a stack to implement Undo functionality.
+
+## How it works
+- Users can insert and delete characters.
+- Each successful edit is recorded as an action.
+- Actions are stored in a stack.
+- Undo reverses the most recent action first (LIFO).
+
+## Concepts practised
+- Stack operations: push and pop
+- Structs and enums in C
+- Arrays and character manipulation
+- Pointers and passing data between functions
+- LIFO and state changes
+- Testing and debugging
+
+## Supported commands
+- `insert <position> <character>`
+- `delete <position>`
+- `undo`
+- `show`
+- `quit`
+
+## Limitations
+- Fixed document capacity.
+- Fixed undo-history capacity.
+- Basic input handling; invalid positions and malformed commands are not fully validated.
+
+## Running
+Compile the C source file and run the resulting executable.
+
+## Learning objective
+Understand how a stack can store a history of actions and reverse state changes in a practical program.     
